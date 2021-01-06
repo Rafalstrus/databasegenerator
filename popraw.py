@@ -14,7 +14,6 @@ for x in range(len(tab1)):
                 f2.write((str(tab1[x][y]).replace("'",'').replace('[','').replace(',','').replace(']','')+"\n"))
 f1.close()
 f2.close()
-
 tab = [1,2,3]
 x = random.randint(0,1)
 if x:
