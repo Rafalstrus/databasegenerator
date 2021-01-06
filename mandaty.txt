@@ -1,0 +1,4 @@
+nie placenie;200
+opoznienie;100
+bledy;50
+oszustwo;500
