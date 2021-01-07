@@ -1,19 +1,19 @@
 Grafik
 Pracownik biurowy
 Specjalista ds. PR
-UrzÍdnik paÒstwowy
+Urzƒôdnik pa≈Ñstwowy
 Ekonomista
 Lekarz
 Programista
-Architekt wnÍtrz / krajobrazu
-Specjalista ds. zakupÛw
-Inøynier årodowiska
+Architekt wnƒôtrz / krajobrazu
+Specjalista ds. zakup√≥w
+In≈ºynier ≈örodowiska
 Specjalista ds. marketingu
 Prawnik
 Webmaster
 Programista baz danych
 Automatyk
-Specjalista ds. ochrony úrodowiska
+Specjalista ds. ochrony ≈õrodowiska
 Projektant wzornictwa
 Laborant
 Dietetyk
@@ -23,21 +23,21 @@ Tester aplikacji
 Dyrektor ds.Administracyjnych
 Specjalista ds. turystyki
 Spedytor
-Koordynator robÛt budowlanych
+Koordynator rob√≥t budowlanych
 Dyrektor ds. Rozwoju
-KsiÍgowa
+Ksiƒôgowa
 Key account manager
 Specjalista ds. BHP
 Technolog
-Kurator sπdowy
-Specjalista ds. obs≥ugi klienta
+Kurator sƒÖdowy
+Specjalista ds. obs≈Çugi klienta
 Konstruktor
 Analityk rynku
-Koordynator sprzedaøy
+Koordynator sprzeda≈ºy
 Agent celny
 Przedstawiciel handlowy
 Fakturzystka
-T≥umacz
+T≈Çumacz
 Project Manager
 Doradca zawodowy
 Dziennikarz
@@ -53,14 +53,14 @@ Specjalista ds. reklamacji
 Trener
 Dyrektor ds. Personalnych
 Recepcjonistka
-Asystentka zarzπdu
+Asystentka zarzƒÖdu
 Projektant IT
 Lektor
-Inøynier Budowy
+In≈ºynier Budowy
 Administrator
-Pe≥nomocnik ds. Jakoúci
+Pe≈Çnomocnik ds. Jako≈õci
 Dyrektor ds. Logistyki
-Agenta nieruchomoúci
+Agenta nieruchomo≈õci
 Specjalista ds. inwestycji
 Doradca finansowy
 Pracownik socjalny
@@ -72,9 +72,9 @@ Office Manager
 Rzeczoznawca
 Projektant konstrukcji budowlanych
 Notariusz
-Inøynier utrzymania ruchu
-Konsultant ds. WdroøeÒ
-Specjalista ds. badaÒ i rozwoju
+In≈ºynier utrzymania ruchu
+Konsultant ds. Wdro≈ºe≈Ñ
+Specjalista ds. bada≈Ñ i rozwoju
 Doradca techniczno-handlowy
 Kierownik Magazynu
 Prezenter
@@ -86,15 +86,15 @@ Telemarketer
 Radca prawny
 Specjalista ds. windykacji
 Specjalista ds. ofertowania
-Dyrektor ds. Sprzedaøy
+Dyrektor ds. Sprzeda≈ºy
 Specjalista ds. dostaw
 Dyrektor ds. Marketingu
-Kierownik punktu sprzedaøy
+Kierownik punktu sprzeda≈ºy
 Doradca podatkowy
-Inøynier ds. Wdraøania Produkcji
-Specjalista ds. kadr i p≥ac
+In≈ºynier ds. Wdra≈ºania Produkcji
+Specjalista ds. kadr i p≈Çac
 Dyrektor ds. Produkcji
 Specjalista ds. pozycjonowania
 Kierownik kontraktu
-Analityk systemÛw
+Analityk system√≥w
 Specjalista ds. rekrutacji
