@@ -23,12 +23,3 @@ def combineData():
     return zawody, list(uczelnie), list(imionaMeskie), list(imionaZenskie), list(nazwiskaDamskie), list(nazwiskaMeskie), list(miasta)
 
 
-def mandatyData():
-    mandatyFile = open('mandaty.txt', 'r')
-    mandaty = list(mandatyFile.read().split("\n"))
-    mandatyToReturn = []
-    for x in mandaty:
-        mandatyToReturn.append(x.split(';'))
-    mandatyFile.close()
-    return mandatyToReturn
-
