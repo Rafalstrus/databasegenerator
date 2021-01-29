@@ -2,5 +2,5 @@ from dataBaseGenerator import Generator
 
 person = Generator()
 person.seed(123)
-for x in 200:
-    person.getData(["imie","nazwisko","uczelnia","zawod","miasto"])
+for x in range(3):
+    person.getData(["imionaMeskie","nazwiskaMeskie","uczelnie","zawody","miasta"],12)

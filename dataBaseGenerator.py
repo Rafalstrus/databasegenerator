@@ -1,24 +1,27 @@
 import random
 import json
-
+#https://stackoverflow.com/questions/12368996/what-is-the-scope-of-a-random-seed-in-python
 class Generator:
     def __init__(self):
         with open('data.json',encoding="utf-8") as json_file:
-            self.data = json.load(json_file)
+            self.data = json.loads(json_file.read())
         self.finalData = []
 
     def generateObject(self):
         return 0
 
-    def getData(self,wantData):
+    def getData(self,wantData,chanceToGraduate):
         dataToAppend = []
         for x in wantData:
-            dataToAppend.append(self.generateData(x))
+            dataToAppend.append(self.generateData(x,chanceToGraduate))
         self.finalData.append(dataToAppend)
         print(dataToAppend)
 
-    def generateData(self,oneFromWantedData):
-        return self.data[oneFromWantedData][random.randint(0,len(self.data[oneFromWantedData])))]
+    def generateData(self,oneFromWantedData,chanceToGraduate):
+        if oneFromWantedData== "uczelnie":
+            if random.randint(0,99)+1 > chanceToGraduate:
+                return None
+        return self.data[oneFromWantedData][random.randint(0,len(self.data[oneFromWantedData]))]
         
     def seed(self,seed):
         self.randomSeed = random.seed(seed)
