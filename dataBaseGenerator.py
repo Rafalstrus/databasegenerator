@@ -11,11 +11,16 @@ class Generator:
         return 0
 
     def getData(self,wantData,chanceToGraduate):
-        dataToAppend = []
+        if self.gender == "m":
+            wantData.insert(0,"nazwiskaMeskie")
+            wantData.insert(0,"imionaMeskie")
+        elif self.gender == "k":
+            wantData.insert(0,"nazwiskaZenskie")
+            wantData.insert(0,"imionaZenskie")            
+        dataToAppend = {}
         for x in wantData:
-            dataToAppend.append(self.generateData(x,chanceToGraduate))
+            dataToAppend[x]=self.generateData(x,chanceToGraduate)
         self.finalData.append(dataToAppend)
-        print(dataToAppend)
 
     def generateData(self,oneFromWantedData,chanceToGraduate):
         if oneFromWantedData== "uczelnie":
@@ -29,7 +34,7 @@ class Generator:
     def addToJson(self):
         return 0
 
-    def addToMysql(self,baseName,newBase=False):
+    def addToMysql(self,baseName,newBase=False,newTable=False):
         import mysql.connector
         mydb = makeConnection(data)
         mycursor = mydb.cursor()
@@ -40,8 +45,22 @@ class Generator:
             mydb = makeConnection(data)
         mycursor = mydb.cursor()
 
-    def addtoFileMysql(self):
-        return 0
+    def addtoFileMysql(self,tablename,filename = "dataToUpdate.sql"):
+        query = "INSERT INTO "+tablename+"("
+        for x in self.finalData:
+            for key,y in x.items():
+                query+= "'"+str(key)+"'"
+        query += ") values"
+        for x in self.finalData:
+            query += "("
+            for key,y in x.items():
+                query+="'"+str(y)+"'," if y != None else str(None)+","
+            query +="),"
+        query = query[:-1]
+        f = open(filename, "w",encoding="utf-8")
+        f.write(query)
+        f.close()
+
 
     def makeConnection(self,data,baseName = 0):
         if baseName==0:

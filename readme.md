@@ -1,4 +1,4 @@
 # databasegenerator
-Small program in python to generate the mysql database
+Small program in python to generate the database with random Polish people
 
-this project will generate a database with selected options
+it's my first program on github, and i learning how it works :)
