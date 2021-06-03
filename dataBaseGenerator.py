@@ -56,19 +56,6 @@ class Generator:
         f.write(jsonToFile)
         f.close()
 
-    def addToMysql(self,baseName,newBase=False,newTable=False):
-        return 0
-    def createMysqlDatabase(self):
-        import mysql.connector
-        mydb = makeConnection(data)
-        mycursor = mydb.cursor()
-        if newBase:
-            mydb = createBase(mycursor,baseName)
-            mydb = makeConnection(data)
-        else:
-            mydb = makeConnection(data)
-        mycursor = mydb.cursor()
-
     def addtoFileMysql(self,tablename,filename = "dataToUpdate.sql"):
         query = self.createMysqlQueryInsert(tablename)
         f = open(filename, "w",encoding="utf-8")
@@ -92,32 +79,6 @@ class Generator:
         query = query[:-2]
         return query
 
-    def makeConnection(self,data,baseName = 0):
-        if baseName==0:
-            mydb = mysql.connector.connect(
-            host=data[0],
-            user=data[1],
-            password=data[2])
-        else:
-            mydb = mysql.connector.connect(
-            host=data[0],
-            user=data[1],
-            password=data[2],
-            database= baseName
-            )  
-        return mydb
-
-    def createBase(self,mycursor,baseName):
-        mycursor.execute("SHOW DATABASES LIKE '"+str(databaseName)+"';")
-        for x in mycursor:
-            if not(not x):
-                print('database with this name already exist')
-            else:
-                mycursor.execute("CREATE DATABASE "+str(databaseName)+"")
-
-    def createBaseFile(self,baseName):
-        return 0
-
     def addtoFileTxt(self,filename = "dataToUpdate.txt",separator=';',header = True):
         query = ''
         for x in self.finalData:
@@ -130,7 +91,7 @@ class Generator:
                 query+= str(y) + separator
             query = query[:-1]
             query +="\n"
-        query = query[:-2]
+        query = query[:-1]
         f = open(filename, "w",encoding="utf-8")
         f.write(query)
         f.close()
